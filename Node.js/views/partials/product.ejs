@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="card mb-3">
+      <div class="row">
+        <div class="col-4">
+          <img src="/images/<%= imageUrl %>" alt="" class="img-fluid" />
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="/products/<%= id %>"><%= name %></a>
+            </h5>
+            <p class="card-text"><%= price %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
